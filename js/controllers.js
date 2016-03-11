@@ -1,11 +1,8 @@
 var cityControllers = angular.module('cityControllers', []);
 
 
-
-
 cityControllers.controller('CityListCtrl',[ '$scope', '$http', 'dataFactory', function($scope, $http, dataFactory) {
 
-    //$http.get('http://mqlocal.aol.com/photos').then(function(cityData){
     dataFactory.getData('http://mqlocal.aol.com/photos').then(function(cityData){
         $scope.cities = cityData.data;
     });
