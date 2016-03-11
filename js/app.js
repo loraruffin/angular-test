@@ -1,4 +1,4 @@
-angular.module('interview', ['ngRoute', 'cityControllers']) //'ngRoute', 'ngResource'
+angular.module('interview', ['ngRoute', 'cityControllers']) 
 .factory('dataFactory', ['$http' , function($http){
     var factory = {};
     factory.getData = function (url) {
