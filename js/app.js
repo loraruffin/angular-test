@@ -4,11 +4,7 @@ angular.module('interview', ['ngRoute', 'cityControllers']) //'ngRoute', 'ngReso
     factory.getData = function (url) {
         return $http.get(url);
     };
-
     return factory;
-
-
-
 }])
 
 .config(['$routeProvider',
