@@ -1,0 +1,11 @@
+<!-- Display List of Cities -->
+
+<div id="cityList">
+    <ul>
+        <li ng-repeat="city in cities">
+            <a href="#/city/{{ city.id }}">
+            {{ city.description.split(" ")[1]}}
+            </a>
+        </li>
+    </ul>
+</div>

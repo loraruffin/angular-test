@@ -1,0 +1,11 @@
+<!-- Display thumbnails -->
+<div id="thumbList" >
+    <figure ng-repeat="img in photos">
+        <img ng-src="{{ img.thumb }}" alt="{{}}"/>
+        <figcaption> {{img.caption}} </figcaption>
+    </figure>
+</div>
+
+<button id="thumbBtn">
+    <a href="/#city">&laquo; Back to City List</a>
+</button>
